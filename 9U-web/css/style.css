@@ -1,0 +1,218 @@
+
+body{
+  font-family: 'Graduate',cursive;
+  padding:0;
+  margin:0; 
+  background-color:#f4f4f4;
+}
+
+/* Global */
+.container{
+  width:80%;
+  margin:auto;
+  overflow:hidden;
+}
+
+ul{
+  margin:0;
+  padding:0;
+}
+
+.button_1{
+  height:38px;
+  background:#ef3b24;
+  border:0;
+  padding-left: 20px;
+  padding-right:20px;
+  color:#ffffff;
+}
+
+.dark{
+  padding:15px;
+  background:#002d62;
+  color:#ffffff;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Header **/
+header{
+  background:#002d62;
+  color:#ffffff;
+  padding-top:30px;
+  min-height:70px;
+  border-bottom:#ef3b24 3px solid;
+}
+
+header a{
+  color:#ffffff;
+  text-decoration:none;
+  text-transform: uppercase;
+  font-size:16px;
+}
+
+header li{
+  display:inline;
+  padding: 0 20px 0 20px;
+  font-size: 60px;
+}
+
+header #branding{
+  float:left;
+}
+header #branding img{
+  width:400px ;
+  height:100px;
+}
+
+header #branding h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+header .current a{
+  color:#ef3b24;
+  font-weight:bold;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+/* Showcase */
+#showcase{
+  min-height:400px;
+  background:url('./9U-web/img/bwalp.jpg') no-repeat;
+  background-position: center;
+  text-align:center;
+  color:#ef3b24 ;
+  border-bottom: #ef3b24 3px solid;
+}
+
+#showcase h1{
+  font-style: Ba;
+  margin-top:10%;
+  font-size:150px;
+  margin-bottom:5%;
+}
+
+#showcase p{
+  font-size:20px;
+}
+
+/* Newsletter */
+#resume{
+  padding:15px;
+  color:#ffffff;
+  background:#002d62;
+}
+
+#resume h1{
+text-align: center;
+
+}
+#resume a{
+  text-decoration: none;
+  color:#ffffff;
+}
+
+
+/* Boxes */
+#boxes{
+  margin-top:20px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  padding:10px;
+}
+
+#boxes img{
+  width:400px;
+  padding-left:15%;
+}
+
+/* Sidebar */
+aside#sidebar{
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  width:90%;
+  padding:5px;
+}
+
+/* Main-col */
+article#main-col{
+  float:left;
+  width:65%;
+}
+
+/* Services */
+ul#services li{
+  list-style: none;
+  padding:20px;
+  border: #cccccc solid 1px;
+  margin-bottom:5px;
+  background:#e6e6e6;
+}
+
+footer{
+  padding-top: 30px;
+  padding-bottom: 1px;
+  color:#ffffff;
+  background-color:#ef3b24;
+}
+footer li{
+ position: auto;
+ display:inline;
+ overflow:hidden;
+ padding: 0% 5% 0% 5%;
+ margin-left: 6%;
+}
+footer p{
+  text-align: center;
+  color:002d62;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+  header #branding,
+  header nav,
+  header nav li,
+  #resume h1,
+  #resume form,
+  #boxes .box,
+  article#main-col,
+  aside#sidebar{
+    float:none;
+    text-align:center;
+    width:100%;
+  }
+
+  header{
+    padding-bottom:20px;
+  }
+
+  #showcase h1{
+    margin-top:40px;
+  }
+
+  #resume button, .quote button{
+    display:block;
+    width:100%;
+  }
+
+  #resume form input[type="email"], .quote input, .quote textarea{
+    width:100%;
+    margin-bottom:5px;
+  }
+}
